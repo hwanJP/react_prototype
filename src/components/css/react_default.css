@@ -1,0 +1,144 @@
+/* common.css 추가 */
+
+body{
+    padding:10px;
+}
+
+#table_wrapper1 {
+    padding-top: 0px !important;
+    border: 1px solid black;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+thead#dataThead tr th {
+    background-color: silver;
+    text-align: center;
+    padding: 1px;
+    font-weight: bold;
+}
+
+tbody#dataTbody tr td {
+    padding:1px;
+    background-color: whitesmoke;
+}
+
+
+table#selTable thead tr th {
+    background-color: silver;
+    text-align: center;
+    padding: 1px;
+    font-weight: bold;
+}
+
+
+table#selTable tbody tr td {
+    padding: 1px;
+    background-color: whitesmoke;
+}
+
+#selectTable {
+    width: 100%;
+    padding-top: 0px !important;
+    border: 1px solid silver;
+    /* overflow: scroll; */
+}
+
+button {
+    border: 1px solid black;
+    margin-top: 10px !important; 
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: bold;	
+}
+
+button:hover {
+    background-color: whitesmoke;
+}
+
+
+.comp_modal_body {
+    height: 80% !important;
+}
+
+.proc_modal_body {
+    height: 80% !important;
+}
+
+.prop_modal_body {
+    height: 80% !important;
+}
+
+
+
+.table_wrapper{
+    display: block;
+    overflow-x: auto;
+    height: 460px;
+    overflow-y: auto;
+    padding-top: 0px !important;
+}
+.table_colspan{
+    display: block;
+    padding: 0 20px;
+    border-collapse: separate;
+    border-spacing: 0;
+    
+}
+.pagination {
+    padding: 0.5rem !important;
+}
+tr{border: 1px solid black !important;} 
+th{
+    border:0.5px solid black !important;
+    white-space:nowrap !important;
+    text-align: center;
+    background:silver;
+}
+td{
+    border:0.5px solid black !important;
+    background:whitesmoke;
+    text-align: center;
+} 
+.comp_modal{position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block;
+    background-color: rgba(0, 0, 0, 0.4); z-index:100;}
+.proc_modal{position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block;
+    background-color: rgba(0, 0, 0, 0.4); z-index:101;}
+.prop_modal{position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block;
+    background-color: rgba(0, 0, 0, 0.4); z-index:102;}
+.comp_modal_body {position: absolute; top: 50%; left: 50%;  width: 700px; height: 100%; padding: 20px; text-align: center; 
+    background-color: rgba(255, 255, 255); border-radius: 10px; box-shadow:1 2px 3px 0 rgba(34, 36, 38, 0.15); 
+    transform: translate(-50%, -50%); overflow-Y: auto; z-index:90;}
+.proc_modal_body {position: absolute; top: 50%; left: 50%;  width: 700px; height: 100%; padding: 20px; text-align: center; 
+    background-color: rgba(255, 255, 255); border-radius: 10px; box-shadow:1 2px 3px 0 rgba(34, 36, 38, 0.15); 
+    transform: translate(-50%, -50%); overflow-Y: auto; z-index:91;}
+.prop_modal_body {position: absolute; top: 50%; left: 50%;  width: 850px; height: 100%; padding: 20px; text-align: center; 
+    background-color: rgba(255, 255, 255); border-radius: 10px; box-shadow:1 2px 3px 0 rgba(34, 36, 38, 0.15); 
+    transform: translate(-50%, -50%); overflow-Y: auto; z-index:92;}
+
+.page-header {border-bottom: none;}
+.invoice-info:nth-of-type(1) {display: flex; justify-content: space-between; border-top: 1px solid #eee;}
+@media (max-width: 767px){
+    .invoice-info:nth-of-type(1) {display: block;}
+}
+.invoice-info:nth-of-type(1) > .invoice-col {float: none !important; padding-top: 20px; padding-bottom:20px;}
+/* .invoice-info:nth-of-type(1) > .invoice-col .row {display: flex; justify-content: space-between; align-items: flex-start;} */
+.invoice-info:after {content: '';display: block;clear:both;}
+.invoice-info .border-bottom-silver:after {content: ''; position: absolute; top: 0px; bottom: 0; left: 0; width: 5px; background: #000;}
+.invoice-info .border-bottom-silver:nth-of-type(1):after {background-color: rgba(15, 101, 169,.5);}
+.invoice-info .border-bottom-silver:nth-of-type(2):after {background-color: rgba(15, 163, 177,.5);}
+.invoice-info .border-bottom-silver:nth-of-type(3):after {background-color: rgba(237, 222, 164,.5);}
+.invoice-info .border-bottom-silver:nth-of-type(4):after {background-color: rgba(247, 160, 114,.5);}
+.invoice-info .border-bottom-silver:nth-of-type(5):after {background-color: rgba(255, 84, 84,.5);}
+/* table cell */
+.rtable th {text-align: center; background: #f1f1f1 !important;}
+.rtable th.A {background: rgba(15, 101, 169,.2) !important; }
+.rtable th.B {background: rgba(15, 163, 177,.2) !important;}
+.rtable th.B2 {background: rgba(237, 222, 164,.5) !important;}
+.rtable th.C {background: rgba(247, 160, 114,.3) !important;}
+.rtable th.D {background: rgba(255, 84, 84,.2) !important;}
+.rtable th.E {background: rgba(15, 101, 169,.2) !important; }
+.rtable th.F {background: rgba(15, 163, 177,.2) !important;}
+.rtable th.G {background: rgba(237, 222, 164,.5) !important;}
+.rtable th.H {background: rgba(247, 160, 114,.3) !important;}
+.rtable th.I {background: rgba(255, 84, 84,.2) !important;}
